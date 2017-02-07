@@ -1,3 +1,6 @@
+# Appears to be a web server for data.  "ws" being web sockets.  quantity and use needs 
+# dug up and listed here.
+
 #!/usr/bin/env python
 #import ssl
 import socket, struct,  threading, cgi, time, p, sys, traceback
