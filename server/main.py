@@ -1,6 +1,7 @@
 import time,json,os,base64,hashlib,string,random, subprocess, traceback
 from clients import alert_event,webcam_viewer,det_state
 import server_m2m
+#mqtt
 import server_ws2 as server_ws
 import send_mail
 import p
@@ -8,6 +9,12 @@ from clients import m2m_clients
 from rule_manager import *
 from sql import *
 from debug import *
+
+# Dear lord this is a huge file.
+# First half implements extensive machine-to-machine communication protocol
+# Second half seems to pull pictures, apply context, check PIR (illumination of a close subject)
+# Nah, the whole fucking thing is a gigantic machine-to-machine interface.
+
 
 #***************************************************************************************#
 #***************************************** m2m *****************************************#
